@@ -1,0 +1,116 @@
+
+.container {
+    position: relative;
+    perspective: 800px;
+  }
+  
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: float-up 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    opacity: 0;
+  }
+  
+  .item:nth-of-type(1) {
+    animation-delay: 0s;
+  }
+  
+  .item:nth-of-type(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .item:nth-of-type(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .item:hover {
+    transform: rotateY(15deg) translateY(-10px) scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FED766;
+    margin-right: 40px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+   
+  }
+  
+  .icon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .content {
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  
+  .item:hover .content {
+    transform: translateX(50px) rotateY(-15deg);
+  }
+  
+  h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #444444;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #888888;
+  }
+  
+  @keyframes float-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes icon-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .icon {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  

@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .a:hover {
+    color: #ccc;
+  }
+  
+  .a:last-of-type {
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
