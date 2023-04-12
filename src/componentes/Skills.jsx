@@ -1,13 +1,11 @@
 import React from "react";
-import { skills } from "../Data2";
-import VerifiedIcon from '@mui/icons-material/Verified';
 import MemoryIcon from '@mui/icons-material/Memory';
 import css from '../css/Skills.module.css';
 import Timeline from "./Timeline";
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="skills" className={css.header}>
       <div className={css.header}>
         <MemoryIcon />
         <h1 className={css.heading}>

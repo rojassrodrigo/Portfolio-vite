@@ -8,7 +8,7 @@ import expres from "../images/express.png"
 import posgre from "../images/postgres.png"
 import mongo from "../images/mongo.png"
 import scrum from "../images/scrum.png"
-import type from "../images/type.png"
+import types from "../images/type.png"
 import jira from "../images/jira.png"
 
 const Timeline = () => {
@@ -25,7 +25,7 @@ const Timeline = () => {
       </div>
       <div className={css.item}>
         <div className={css.icon}>
-          <img src={type} alt="icono del evento 1" />
+          <img src={types} alt="icono del evento 1" />
         </div>
         <div className={css.content}>
           <h3>Typescript</h3>

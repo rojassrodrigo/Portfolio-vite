@@ -17,8 +17,8 @@ export default function About() {
             Laborum, voluptas natus?
           </p>
           <div className={css.ctaContainer}>
-            <a href="#contact">Trabaja conmigo</a>
-            <a href="#projects">Mira mis trabajos anteriores</a>
+            <a className={css.button} href="#contact">Trabaja conmigo</a>
+            <a className={css.button} href="#projects">Mira mis trabajos anteriores</a>
           </div>
         </div>
         <div className={css.cardImage}>
