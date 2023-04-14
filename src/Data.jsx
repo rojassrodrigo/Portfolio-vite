@@ -7,8 +7,8 @@ import appecom3 from "../src/images/appecom3.png"
 
 export const projects = [
     {
-      title: "React Reserve",
-      subtitle: "MERN Stack",
+      title: "Pokemon App",
+      subtitle: "React and Redux",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: caratula1,

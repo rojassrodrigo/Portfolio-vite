@@ -16,6 +16,6 @@ export const testimonials = [
       company: "Gamma LLC",
       quote: "El proceso de compra fue muy sencillo y rápido. Recibí mi pedido en tiempo y forma.",
       image: "https://example.com/images/testimonial3.jpg",
-    },
+    }
   ];
   

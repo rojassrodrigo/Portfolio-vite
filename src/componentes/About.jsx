@@ -12,9 +12,11 @@ export default function About() {
             <br/>Full Stack Developer
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
+          Soy un profesional con conocimientos en Backend y Frontend, 
+          lo que me ha permitido destacar en la resolución de conflictos y la organización.
+           Siempre estoy en constante búsqueda 
+          de aprendizaje y mejora. Agradezco su interés en mi perfil y espero poder
+           colaborar juntos en el futuro.
           </p>
           <div className={css.ctaContainer}>
             <a className={css.button} href="#contact">Trabaja conmigo</a>

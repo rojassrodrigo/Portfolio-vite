@@ -13,6 +13,11 @@
   margin: 0 auto 50px;
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+}
 
 .cardContent {
   padding: 32px;
@@ -31,6 +36,11 @@
   margin-bottom: 24px;
   line-height: 1.5;
 }
+@media only screen and (max-width: 768px) {
+  .cardContent {
+    flex-basis: 100%;
+  }
+}
 
 .ctaContainer {
   display: flex;
@@ -38,6 +48,24 @@
   justify-content: space-between;
   margin-top: 24px;
 }
+
+@media only screen and (max-width: 768px) {
+  .ctaContainer {
+    flex-direction: column;
+  }
+  .ctaContainer button:first-child {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    }
+}
+
 .button {
   color: #fff;
   background-image: linear-gradient(to right, #0242a1, #011bb1af);
@@ -97,9 +125,16 @@
 
 .cardImage {
   flex: 1;
+  max-width: 100%;
   max-width: 400px; /* nuevo */
   border-radius: 8px; /* nuevo */
   overflow: hidden; /* nuevo */
+}
+
+@media screen and (max-width: 600px) {
+  .cardImage {
+    display: none;
+  }
 }
 
 .cardImage img {

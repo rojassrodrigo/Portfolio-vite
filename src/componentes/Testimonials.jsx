@@ -1,41 +1,85 @@
 import React from "react";
-import TerminalIcon from '@mui/icons-material/Terminal';
-import GroupIcon from '@mui/icons-material/Group';
-import { testimonials } from "../Data3";
+import { Grid, Box, Typography } from "@mui/material";
+import {
+  Phone,
+  Email, 
+  LocationOn,
+  Facebook,
+  Instagram,
+} from "@mui/icons-material";
+import css from '../css/Testimonials.module.css';
+import ContactMailIcon from "@mui/icons-material/ContactMail";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-export default function Testimonials() {
+export default function InfoContact() {
+  const contactInfo = {
+    phone: "+543704804510",
+    email: "rojasrodrigo@live.com",
+    address: "Av. Hipolito Yrigoyen 165, Cordoba, Argentina",
+    social: {
+      github: "https://github.com/rojassrodrigo",
+      facebook: "https://www.facebook.com/example",
+      instagram: "https://www.instagram.com/rojassrodrigo/",
+    },
+  };
+
   return (
     <section id="testimonials">
-      <div className="container px-5 py-10 mx-auto text-center">
-        <GroupIcon className="w-10 inline-block mb-4" />
-        <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
-          Testimonios de clientes
-        </h1>
-        <div className="flex flex-wrap m-4">
-          {testimonials.map((testimonial) => (
-            <div className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                <TerminalIcon className="block w-8 text-gray-500 mb-4" />
-                <p className="leading-relaxed mb-6">{testimonial.quote}</p>
-                <div className="inline-flex items-center">
-                  <img
-                    alt="testimonial"
-                    src={testimonial.image}
-                    className="w-12 rounded-full flex-shrink-0 object-cover object-center"
-                  />
-                  <span className="flex-grow flex flex-col pl-4">
-                    <span className="title-font font-medium text-white">
-                      {testimonial.name}
-                    </span>
-                    <span className="text-gray-500 text-sm uppercase">
-                      {testimonial.company}
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
+      <div className={css.cardContainer}>
+        <div className={css.cardTitle}>
+          <Box sx={{ mr: 1 }}>
+            <ContactMailIcon fontSize="small" />
+          </Box>
+          <Typography variant="h5">Información de contacto</Typography>
         </div>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={4}>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <Box sx={{ mr: 1 }}>
+                <Phone />
+              </Box>
+              <Typography variant="subtitle1">{contactInfo.phone}</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <Box sx={{ mr: 1 }}>
+                <Email />
+              </Box>
+              <Typography variant="subtitle1">{contactInfo.email}</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <Box sx={{ mr: 1 }}>
+                <LocationOn />
+              </Box>
+              <Typography variant="subtitle1">
+                {contactInfo.address}
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+        <Box sx={{ mt: 2 }}>
+          <Typography variant="subtitle1">Síguenos en:</Typography>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ mr: 1 }}>
+              <a href={contactInfo.social.github}>
+                <GitHubIcon />
+              </a>
+            </Box>
+            <Box sx={{ mr: 1 }}>
+              <a href={contactInfo.social.facebook}>
+                <Facebook />
+              </a>
+            </Box>
+            <Box sx={{ mr: 1 }}>
+              <a href={contactInfo.social.instagram}>
+                <Instagram />
+              </a>
+            </Box>
+          </Box>
+        </Box>
       </div>
     </section>
   );

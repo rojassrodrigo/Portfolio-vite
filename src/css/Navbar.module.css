@@ -1,33 +1,136 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.a:hover {
+  color: #ccc;
+}
+
+.a:last-of-type {
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px; 
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
   .nav {
-    display: flex;
-    gap: 30px;
+    gap: 5px;
   }
-  
-  .a:hover {
-    color: #ccc;
+  .a {
+    font-size: 14px;
+    padding: 5px;
   }
-  
-  .a:last-of-type {
-    background-color: #fff;
-    color: #333;
-    border-radius: 4px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
+}
+
+
+
+/* Estilos de la navbar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Estilos de los enlaces */
+.a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.a:hover {
+  color: #ccc;
+}
+
+.a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Estilos del botón */
+.a:last-of-type {
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.a:last-of-type:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  left: -100%;
+  top: 0;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.a:last-of-type:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.a:last-of-type:hover:before {
+  left: 0;
+}
+
+/* Estilos del icono del botón */
+.a:last-of-type svg {
+  width: 18px;
+  height: 18px;
+  fill: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.a:last-of-type:hover svg {
+  fill: #fff;
+  transform: translateX(5px);
+}
+
