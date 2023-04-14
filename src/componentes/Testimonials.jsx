@@ -59,7 +59,7 @@ export default function InfoContact() {
               </Typography>
             </Box>
           </Grid>
-        </Grid>
+        </Grid>  
         <Box sx={{ mt: 2 }}>
           <Typography variant="subtitle1">Síguenos en:</Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
