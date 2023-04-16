@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import css from "../css/Contact.module.css";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 
