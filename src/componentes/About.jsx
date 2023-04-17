@@ -9,28 +9,28 @@ export default function About() {
     <section id="about">
       <div className={css.card}>
         <div className={css.cardContent}>
-        <TypeAnimation
+          <TypeAnimation
             sequence={[
-              'Rodrigo Rojas', // Types 'Hola, soy Rodrigo'
+              'Rodrigo Victor Rojas', // Types 'Hola, soy Rodrigo'
               1000, // Waits 1s
-              'Full Stack Web Developer',
+              'Full Stack Developer',
               1000,
               () => {
                 console.log('Sequence completed');
               },
             ]}
-            speed={160}
+            speed={145}
             style={{
-              fontSize: '3.5em',
-              marginBottom: '16px',
-              lineHeight: '1.2',
-              fontWeight: 'bold', // Agregar esta línea
-              display: 'block' // Agregar esta línea
+              fontFamily: 'Roboto, sans-serif',
+              fontSize: '2.7rem',
+              marginBottom: '10px',
+              lineHeight: '1.5',
+              fontWeight: 'bold',
+              display: 'block',
+              textShadow: '2px 2px #529',
             }}
             repeat={Infinity}
           />
-
-           
           <p>
           Soy un profesional con conocimientos en Backend y Frontend, 
           lo que me ha permitido destacar en la resolución de conflictos y la organización.
