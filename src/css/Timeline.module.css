@@ -43,7 +43,7 @@
     background-color: #FED766;
     margin-right: 40px;
     transform-style: preserve-3d;
-    transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: transform 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     
   }
   
@@ -59,11 +59,11 @@
   
   .content {
     transform-style: preserve-3d;
-    transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: transform 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
   
   .item:hover .content {
-    transform: translateX(50px) rotateY(-15deg);
+    transform: translateX(25px) rotateY(-20deg);
   }
   
   h3 {
