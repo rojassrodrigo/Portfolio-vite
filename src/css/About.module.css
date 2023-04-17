@@ -1,5 +1,4 @@
 #about {
-  background-color: #f5f5f5;
   padding: 80px 0 0;
 }
 
@@ -127,9 +126,8 @@
 
 .cardImage {
   flex: 1;
-  max-width: 100%;
-  max-width: 400px; /* nuevo */
-  border-radius: 8px; /* nuevo */
+  max-width: 360px; /* nuevo */
+  border-radius: 4px; /* nuevo */
   overflow: hidden; /* nuevo */
   margin-top: 20px;
 }
@@ -143,7 +141,7 @@
 .cardImage img {
   margin-top: 50px;
   width: 100%;
-  max-width: 500px;
+  max-width: 330px;
   height: auto;
   object-fit: cover;
   border-radius: 25px;

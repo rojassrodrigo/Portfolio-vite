@@ -34,7 +34,7 @@ export default function About() {
           <p>
           Soy un profesional con conocimientos en Backend y Frontend, 
           lo que me ha permitido destacar en la resolución de conflictos y la organización.
-           Siempre estoy en constante búsqueda 
+           Siempre estoy en constante búsqueda
           de aprendizaje y mejora. Agradezco su interés en mi perfil y espero poder
            colaborar juntos en el futuro.
           </p>
@@ -43,8 +43,8 @@ export default function About() {
             <a className={css.button} href={cv} download>Descargar Curriculum</a>
           </div>
         </div>
-        <div className={css.cardImage}>
-          <img alt="hero" src={perfil} className={css.image} />
+        <div className={css.cardImage} >
+          <img alt="hero" src={perfil} />
         </div>
       </div>
     </section>
