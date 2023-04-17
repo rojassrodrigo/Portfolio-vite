@@ -1,6 +1,7 @@
 import React from 'react';
 import css from '../css/About.module.css';
 import perfil from '../images/perfil1.jpg';
+import cv from '../images/RodrigoRojas.jpg'
 
 export default function About() {
   return (
@@ -20,7 +21,7 @@ export default function About() {
           </p>
           <div className={css.ctaContainer}>
             <a className={css.button} href="#contact">Trabaja conmigo</a>
-            <a className={css.button} href="#projects">Mira mis trabajos anteriores</a>
+            <a className={css.button} href={cv} download>Descargar Curriculum</a>
           </div>
         </div>
         <div className={css.cardImage}>
