@@ -4,11 +4,26 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css';
 import css from "../css/Contact.module.css";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const form = useRef();
+
+  const sendEmail = () => {
+
+    emailjs.sendForm('service_lzlnj0g', 'template_23by57t', form.current, 'R9c1ul4WSoVpLTH69')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   const validateForm = () => {
     let errors = {};
@@ -36,7 +51,7 @@ export default function Contact() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    sendEmail()
     const errors = validateForm();
 
     if (Object.keys(errors).length === 0) {
@@ -68,14 +83,16 @@ export default function Contact() {
         <p className={css.text}>
         Si tienes alguna consulta no dudes en contactarme!
         </p>
-        <form onSubmit={handleSubmit}>
+
+        <form ref={form} onSubmit={handleSubmit}>
           <label>
             Nombre:
-            <input type="text" value={name} onChange={(event) => setName(event.target.value.slice(0, 20))} />
+            <input type="text" name="name" value={name} onChange={(event) => setName(event.target.value.slice(0, 20))} />
           </label>
           <label>
             Correo electrónico:
             <input
+              name="email"
               type="email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
@@ -83,9 +100,9 @@ export default function Contact() {
           </label>
           <label>
             Mensaje:
-            <textarea value={message} onChange={(event) => setMessage(event.target.value.slice(0, 300))} />
+            <textarea name="message" value={message} onChange={(event) => setMessage(event.target.value.slice(0, 300))} />
           </label>
-          <button type="submit">Enviar</button>
+          <button value="Send" type="submit">Enviar</button>
         </form>
       </div>
     </section>

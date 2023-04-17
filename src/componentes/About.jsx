@@ -1,6 +1,6 @@
 import React from 'react';
 import css from '../css/About.module.css';
-import perfil from '../images/perfil1.jpg';
+import perfil from '../images/perfil2.jpg';
 import cv from '../images/RodrigoRojas.jpg'
 
 export default function About() {

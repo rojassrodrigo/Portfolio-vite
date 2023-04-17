@@ -140,7 +140,7 @@
 .cardImage img {
   margin-top: 50px;
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
   height: auto;
   object-fit: cover;
   border-radius: 25px;
