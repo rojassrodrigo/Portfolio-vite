@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import css from "../css/Contact.module.css";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import React, { useRef } from 'react';
+import CodeIcon from '@mui/icons-material/Code';
 import emailjs from '@emailjs/browser';
 
 
@@ -76,6 +77,8 @@ export default function Contact() {
     <section id="contact">
       <ToastContainer position="top-right" autoClose={5000} />
       <div className={css.container}>
+          
+      <CodeIcon/>
         <div className={css.cardTitle}>
           <ContactMailIcon />
           <h1>Contacto</h1>

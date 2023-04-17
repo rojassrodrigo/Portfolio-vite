@@ -1,12 +1,17 @@
+#contact {
+  margin-bottom: 0.5rem;
+}
+
 .container {
     max-width: 500px;
     margin: 0 auto;
+    margin-top: 100px;
   }
   
   .cardTitle {
+    margin-top: 100px;
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
     justify-content: center;
   }
   .text {
