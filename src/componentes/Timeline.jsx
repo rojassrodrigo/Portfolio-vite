@@ -20,7 +20,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>Javascript</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2021 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
@@ -29,7 +29,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>Typescript</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
@@ -38,7 +38,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>React</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
@@ -47,7 +47,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>Redux</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
@@ -56,7 +56,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>Node.js</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
@@ -65,7 +65,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>Express.js</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
@@ -74,7 +74,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>PostgreSQL</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
@@ -83,7 +83,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>MongoDB</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
@@ -92,7 +92,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>Scrum Master</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
@@ -101,7 +101,7 @@ const Timeline = () => {
         </div>
         <div className={css.content}>
           <h3>Jira</h3>
-          <p>Event description goes here.</p>
+          <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>
     </div>

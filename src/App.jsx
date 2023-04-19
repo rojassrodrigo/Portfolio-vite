@@ -3,6 +3,7 @@ import About from './componentes/About'
 import Contact from './componentes/Contact'
 import Navbar from './componentes/Navbar'
 import Projects from './componentes/Projects'
+// import ChatBot from './componentes/PruebaExtra'
 import Skills from './componentes/Skills'
 import Testimonials from './componentes/Testimonials'
 

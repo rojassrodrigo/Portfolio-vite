@@ -14,7 +14,7 @@ export default function Projects() {
         </div>
         <div className={css.projectList}>
           {projects.map((project) => ( 
-            <a href={project.link} key={project.image} className={css.project}>
+            <a href={project.link} target="_blank" key={project.image} className={css.project}>
               <img alt="gallery" src={project.image} />
               <div>
                 <h2>{project.subtitle}</h2>
