@@ -12,7 +12,7 @@
     margin-bottom: 60px;
     transform-style: preserve-3d;
     transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    animation: float-up 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    animation: float-up 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
     opacity: 0;
   }
   
@@ -43,7 +43,7 @@
     background-color: #FED766;
     margin-right: 40px;
     transform-style: preserve-3d;
-    transition: transform 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: transform 0.05s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     
   }
   
