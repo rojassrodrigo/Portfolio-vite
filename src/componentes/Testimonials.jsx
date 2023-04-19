@@ -10,6 +10,7 @@ import {
 import css from '../css/Testimonials.module.css';
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function InfoContact() {
   const contactInfo = {
@@ -18,7 +19,7 @@ export default function InfoContact() {
     address: "Av. Hipolito Yrigoyen 165, Cordoba, Argentina",
     social: {
       github: "https://github.com/rojassrodrigo",
-      facebook: "https://www.facebook.com/example",
+      linkedin: "https://www.linkedin.com/in/rodrigo-rojas-9b3275216/",
       instagram: "https://www.instagram.com/rojassrodrigo/",
     },
   };
@@ -64,17 +65,17 @@ export default function InfoContact() {
           <Typography variant="subtitle1">Síguenos en:</Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Box sx={{ mr: 1 }}>
-              <a href={contactInfo.social.github}>
+              <a target="_blanck" href={contactInfo.social.github}>
                 <GitHubIcon />
               </a>
             </Box>
             <Box sx={{ mr: 1 }}>
-              <a href={contactInfo.social.facebook}>
-                <Facebook />
+              <a target="_blanck" href={contactInfo.social.linkedin}>
+                <LinkedInIcon/>
               </a>
             </Box>
             <Box sx={{ mr: 1 }}>
-              <a href={contactInfo.social.instagram}>
+              <a target="_blanck" href={contactInfo.social.instagram}>
                 <Instagram />
               </a>
             </Box>
