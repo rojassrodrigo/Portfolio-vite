@@ -1,7 +1,7 @@
 import caratula1 from "../src/images/petopia.png";
 import appviajes from "../src/images/chatbot5.jpg";
 import appdogs from "../src/images/appstore.png";
-import appecom from "../src/images/appecom.png";
+import proteinx from "../src/images/proteinx.png";
 import appecom2 from "../src/images/appecom2.png"
 import appecom3 from "../src/images/appecom3.png"
 
@@ -9,16 +9,23 @@ export const projects = [
     {
       title: "Petopia",
       subtitle: "JavaScript, React and MongoDB",
-      description: "Nuestro equipo utilizó la metodología Scrum para desarrollar una plataforma de e-commerce para la adopción de animales. La plataforma cuenta con una pasarela de pagos segura, login, filtros de búsqueda, paginación y un panel de administración completo. Tecnologías utilizadas incluyen TailwindCSS, MongoDB, React y Node.js.",
+      description: "Nuestro equipo utilizó la metodología Scrum para desarrollar una plataforma de e-commerce para la adopción de animales. La plataforma cuenta con una pasarela de pagos segura, login, filtros de búsqueda, paginación y un panel de administración completo. Tecnologías utilizadas incluyen TailwindCSS, MongoDB, React y Node.js. Destacamos que el mantenimiento de este sitio web no tiene costo adicional.",
       image: caratula1,
       link: "https://fe-shelter.vercel.app/",
     },
     {
       title: "Apple Store",
       subtitle: "Javascript, React and Redux",
-      description: "Este es un prototipo de ecommerce de venta de iPhone que se encuentra en desarrollo fue hecho con JS, React, Redux y Bootstrap. Además, cuenta con un sistema de login de Google, una pasarela de pagos con Paypal y un carrito de compras intuitivo para una experiencia de usuario fluida y satisfactoria.",
+      description: "Este es un prototipo de comercio electrónico especializado en la venta de iPhone que se encuentra en desarrollo fue hecho con JS, React, Redux y Bootstrap. Además, cuenta con un sistema de login de Google, una pasarela de pagos con Paypal y un carrito de compras intuitivo para una experiencia de usuario fluida y satisfactoria. Destacamos que el mantenimiento de este sitio web no tiene costo adicional.",
       image: appdogs,
       link: "https://aplicacion-comercio-electronico.vercel.app/",
+    },
+    {
+      title: "ProteinX",
+      subtitle: "TypeScript, Next.js and GoogleSheets",
+      description: "Se presenta un prototipo de comercio electrónico especializado en la venta de suplementos deportivos, el cual ha sido desarrollado utilizando tecnologías como Typescript, Nextjs, Chackra y GoogleSheets. Este sitio web cuenta con una interfaz de usuario intuitiva y un carrito de compras que ofrece una experiencia de compra fluida y satisfactoria. Destacamos que el mantenimiento de este sitio web no tiene costo adicional.",
+      image: proteinx,
+      link: "https://tienda-suplementos.vercel.app/",
     },
     
     {

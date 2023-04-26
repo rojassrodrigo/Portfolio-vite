@@ -1,4 +1,4 @@
-<div className={css.info}>
+{/* <div className={css.info}>
 <div>
   <h2>DIRECCIÓN</h2>
   <p>Av. Hipolito Yrigoyen 165</p>
@@ -16,5 +16,5 @@
 </div>
 </div>
 </div>
-
+ */}
 

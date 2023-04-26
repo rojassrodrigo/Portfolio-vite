@@ -10,6 +10,7 @@ import mongo from "../images/mongo.png"
 import scrum from "../images/scrum.png"
 import types from "../images/type.png"
 import jira from "../images/jira.png"
+import nextjs from "../images/nextjs.png"
 
 const Timeline = () => {
   return (
@@ -39,6 +40,15 @@ const Timeline = () => {
         <div className={css.content}>
           <h3>React</h3>
           <p>Desde 2022 - a la Actualidad</p>
+        </div>
+      </div>
+      <div className={css.item}>
+        <div className={css.icon}>
+          <img src={nextjs} alt="icono del evento 3" />
+        </div>
+        <div className={css.content}>
+          <h3>Next.js</h3>
+          <p>Desde 2023 - a la Actualidad</p>
         </div>
       </div>
       <div className={css.item}>
