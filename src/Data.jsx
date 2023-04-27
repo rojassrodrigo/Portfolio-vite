@@ -2,8 +2,8 @@ import caratula1 from "../src/images/petopia.png";
 import appviajes from "../src/images/chatbot5.jpg";
 import appdogs from "../src/images/appstore.png";
 import proteinx from "../src/images/proteinx.png";
-import appecom2 from "../src/images/appecom2.png"
-import appecom3 from "../src/images/appecom3.png"
+import appjuegos from "../src/images/appjuegos.jpg"
+import financy from "../src/images/financy.jpg"
 
 export const projects = [
     {
@@ -27,7 +27,6 @@ export const projects = [
       image: proteinx,
       link: "https://tienda-suplementos.vercel.app/",
     },
-    
     {
       title: "Chatbot con IA",
       subtitle: "TypeScript, React and Tailwind",
@@ -35,6 +34,20 @@ export const projects = [
         "Este proyecto es un chatbot funcional impulsado por Inteligencia Artificial en la plataforma Cohere. Utiliza tecnologías como Typescript, Tailwind y React. Se puede adaptar a cualquier tipo de sitio web de comercio electrónico o portafolio.",
       image: appviajes,
       link: "https://chatbot-phi-ten.vercel.app/",
+    },
+    {
+      title: "Financy",
+      subtitle: "JavaScript, React and Tailwind",
+      description: "La aplicación de gestión de tareas y finanzas personales, construida con React y JavaScript, te permite iniciar sesión en tu cuenta para administrar tus tareas diarias y gastos financieros de manera fácil y organizada. Esta app todavia no esta lista, se encuentra en desarrollo.",
+      image: financy,
+      link: "https://github.com/rojassrodrigo",
+    },
+    {
+      title: "Memotest",
+      subtitle: "JavaScript, React and Tailwind",
+      description: "Prueba tu memoria con nuestra app de Memotest desarrollada en JavaScript y React. Diviértete mientras mejoras tus habilidades de retención y disfruta de distintos niveles de dificultad. Esta app todavia no esta lista, se encuentra en desarrollo",
+      image: appjuegos,
+      link: "https://github.com/rojassrodrigo",
     },
     
     // {

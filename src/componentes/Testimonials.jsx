@@ -4,7 +4,6 @@ import {
   Phone,
   Email, 
   LocationOn,
-  Facebook,
   Instagram,
 } from "@mui/icons-material";
 import css from '../css/Testimonials.module.css';
@@ -14,7 +13,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function InfoContact() {
   const contactInfo = {
-    phone: "+543704804510",
+    phone: "+543704231864",
     email: "rojasrodrigo@live.com",
     address: "Av. Hipolito Yrigoyen 165, Cordoba, Argentina",
     social: {
