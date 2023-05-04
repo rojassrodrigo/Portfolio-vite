@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   AppBar,
   Toolbar,
-  Typography,
   Button,
   IconButton,
   Drawer,
@@ -11,6 +10,7 @@ import {
   ListItemText,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function Navbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -34,13 +34,19 @@ export default function Navbar() {
   ];
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: "#333333" }}>
+    <AppBar position="fixed"   sx={{
+      background:
+        "linear-gradient(to bottom, #121212, #000000)",
+      transition: "background-color 0.3s ease-in-out",
+      boxShadow: "horizontal-offset",
+    }}>
       <Toolbar>
         <IconButton
           edge="start"
           color="inherit"
           aria-label="menu"
           onClick={toggleDrawer(true)}
+          sx={{ display: { xs: "block", sm: "none" } }}
         >
           <MenuIcon />
         </IconButton>
@@ -48,7 +54,6 @@ export default function Navbar() {
           Rodrigo Rojas
         </Button>
         <Drawer anchor="top" open={openDrawer} onClose={toggleDrawer(false)} sx={{ display: { xs: 'block', sm: 'none' } }}>
-
           <List sx={{ width: "200px" }}>
             {menuItems.map((item) => (
               <ListItem key={item.text} button onClick={toggleDrawer(false)} component="a" href={item.href}>
@@ -56,7 +61,14 @@ export default function Navbar() {
               </ListItem>
             ))}
           </List>
+          <IconButton
+            onClick={toggleDrawer(false)}
+            sx={{ position: 'absolute', top: 0, right: 0, color: 'tomato' }}
+          >
+            <CloseIcon />
+          </IconButton>
         </Drawer>
+
         <Button color="inherit" href="#projects" sx={{ display: { xs: "none", sm: "block" } }}>
           Mis Proyectos
         </Button>

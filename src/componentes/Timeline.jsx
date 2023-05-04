@@ -101,7 +101,7 @@ const Timeline = () => {
           <img src={scrum} alt="icono del evento 3" />
         </div>
         <div className={css.content}>
-          <h3>Scrum Master</h3>
+          <h3>Scrum</h3>
           <p>Desde 2022 - a la Actualidad</p>
         </div>
       </div>

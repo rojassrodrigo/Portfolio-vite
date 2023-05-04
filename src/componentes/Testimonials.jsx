@@ -61,7 +61,7 @@ export default function InfoContact() {
           </Grid>
         </Grid>  
         <Box sx={{ mt: 2 }}>
-          <Typography variant="subtitle1">Síguenos en:</Typography>
+          <Typography variant="subtitle1">Sígueme en:</Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Box sx={{ mr: 1 }}>
               <a target="_blanck" href={contactInfo.social.github}>

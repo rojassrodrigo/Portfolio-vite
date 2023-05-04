@@ -97,7 +97,7 @@ h1 {
 
 .button {
   color: #fff;
-  background-image: linear-gradient(to right, #a3a1a1, #525252af);
+  background-image: linear-gradient(to right, #313131, #000000d3);
   padding: 16px 24px;
   border-radius: 8px;
   font-size: 18px;
@@ -112,7 +112,7 @@ h1 {
 .button::before {
   content: "";
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(66, 66, 66, 0.2);
   top: -50%;
   left: -50%;
   width: 200%;
