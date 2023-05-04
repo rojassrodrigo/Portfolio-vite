@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import css from '../css/About.module.css';
 import perfil from '../images/perfil2.jpg';
-import cv from '../images/Rodrigo_Rojas.pdf'
+import cv from '../images/CvRodrigo.pdf'
 import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
