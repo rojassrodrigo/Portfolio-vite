@@ -4,12 +4,13 @@
 h1 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #f7f7f7;
 }
 
 .card {
   display: flex;
   flex-direction: row;
-  background-color: #fff; 
+  background-color: #000000; 
   border-radius: 16px;
   overflow: hidden;
   max-width: 1000px;
@@ -17,9 +18,31 @@ h1 {
   width: 100%;
   margin-top: 10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .card {
-    flex-direction: column;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ctaContainer {
+    flex-direction: row;
+  }
+}
+
+.ctaContainer button:first-child {
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .ctaContainer button:first-child {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardContent {
+    flex-basis: 100%;
   }
 }
 
@@ -38,7 +61,7 @@ h1 {
 
 .cardContent p {
   font-size: 24px;
-  color: #333;
+  color: #ffffffe1;
   margin-bottom: 24px;
   line-height: 1.5;
 }
@@ -74,7 +97,7 @@ h1 {
 
 .button {
   color: #fff;
-  background-image: linear-gradient(to right, #0242a1, #011bb1af);
+  background-image: linear-gradient(to right, #a3a1a1, #525252af);
   padding: 16px 24px;
   border-radius: 8px;
   font-size: 18px;
@@ -111,7 +134,7 @@ h1 {
 }
 
 .button.secondary {
-  background-image: linear-gradient(to right, #0069a193, #014d7cb0);
+  background-image: linear-gradient(to right, #a5a5a593, #515c63b0);
 }
 
 .button.secondary:hover {
@@ -122,11 +145,11 @@ h1 {
 
 .ctaContainer button:first-child {
   margin-right: 16px;
-}
+} 
 
 
 .ctaContainer a:hover {
-  background-color: #555555c0;
+  background-color: #f5f1f1c0;
 }
 
 .cardImage {

@@ -34,7 +34,7 @@ export default function Navbar() {
   ];
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{ backgroundColor: "#333333" }}>
       <Toolbar>
         <IconButton
           edge="start"

@@ -21,7 +21,8 @@ export default function About() {
                 lineHeight: '1.5',
                 fontWeight: 'bold',
                 display: 'block',
-                textShadow: '2px 2px #529',
+                textShadow: '2px 2px #365',
+                color: '#fff'
               }}
               repeat={Infinity}
             />

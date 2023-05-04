@@ -2,6 +2,7 @@
   margin-bottom: 0.5rem;
 }
 
+
 .container {
     max-width: 500px;
     margin: 0 auto;
@@ -29,8 +30,8 @@
   
   .cardTitle h1 {
     font-size: 2.5rem;
-    font-weight: 500;
-    color: #444;
+    margin-bottom: 2.3rem;
+    color: #f7f7f7;
   }
   
   .subtitulo {
