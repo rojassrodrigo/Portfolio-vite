@@ -13,7 +13,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function InfoContact() {
   const contactInfo = {
-    phone: "+543704231864",
+    phone: "+543705134302",
     email: "rojasrodrigo@live.com",
     address: "Av. Hipolito Yrigoyen 165, Cordoba, Argentina",
     social: {
